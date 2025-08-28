@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laksa Bangsa</title>
+    <style>
+        @font-face {
+            font-family: "Moderniz";
+            src: url("Fonts/Moderniz.otf") format("opentype");
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: "Just Sans";
+            src: url("Fonts/Just Sans Regular.otf") format("opentype");
+            font-weight: normal;
+        }
+
+        body {
+            text-align: center;
+            background-color: #fffde5;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        h1 {
+            font-family: "Moderniz";
+            font-size: 50px;
+        }
+
+        h2 {
+            font-family: "Moderniz";
+            font-size: 35px;
+        }
+
+        p {
+            font-family: "Just Sans";
+            font-size: 25px;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100vw;
+            height: 200px;
+            background-color: #ffd54c;
+        }
+
+        header h1, header p {
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 15px;
+            margin-bottom: -10px;
+            display: flex;
+            gap: 20px;
+            font-family: "Just Sans";
+            font-size: 17.5px;
+        }
+
+        nav a {
+            text-decoration: none;
+            background-color: #ffeca7;
+            color: #000000;
+            padding: 5px 20px;
+            /* box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.2), inset 0 1.5px 5px 0 rgba(0, 0, 0, 0.19); */
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100vw;
+            height: 50px;
+            background-color: #ffd54c;
+        }
+
+        footer p {
+            font-size: 12.5px;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 20px;
+        }
+
+        #Tentang p, #Kontak p {
+            margin: 10px;
+        }
+
+        #table {
+            background-color: #ffd54c;
+            padding: 25px 40px;
+            border-radius: 10px;
+            border: 0;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        table {
+            background-color: #ffeca7;
+            font-family: "Just Sans";
+            font-size: 20px;
+            width: 80vw;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        th, td {
+            border: 2px solid #000000;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #ffda61;
+        }
+
+        .produk-showcase {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 100px;
+        }
+
+        .produk {
+            width: 290px;
+            height: 300px;
+            background-color: #ffd54c;
+            text-align: center;
+            border: 0;
+            border-radius: 10px;
+            padding: 30px 0;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .produk img {
+            width: 225px;
+            height: 225px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Laksa Bangsa</h1>
+        <p>Laksanya Nusantara</p>
+        <nav>
+            <a href="#Tentang">Tentang Kami</a>
+            <a href="#Produk">Produk</a>
+            <a href="#Harga">Daftar Harga</a>
+            <a href="#Kontak">Kontak</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Tentang">
+            <h2>Tentang Kami</h2>
+            <p>Mie kami selalu dibuat handmade.</p>
+            <p>Kuah kami dibuat oleh chef profesional.</p>
+            <p>Karyawan kami dilatih untuk memberikan servis terbaik.</p>
+            <p>Hanya untuk pelanggan kami!</p>
+        </section>
+
+        <section id="Produk">
+            <h2>Produk Kami</h2>
+            <div class="produk-showcase">
+                <div class="produk">
+                    <img src="Laksa Betawi.png" alt="Laksa Betawi">
+                    <p>Laksa Betawi</p>
+                </div>
+                <div class="produk">
+                    <img src="Laksa Bogor.jpeg" alt="Laksa Bogor">
+                    <p>Laksa Bogor</p>
+                </div>
+                <div class="produk">
+                    <img src="Laksa Singapura.jpg" alt="Laksa Singapura">
+                    <p>Laksa Singapura</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Harga">
+            <h2>Daftar Harga</h2>
+            <div id="table">
+            <table>
+                <tr>
+                    <th>Nama Produk</th>
+                    <th>Harga</th>
+                </tr>
+                <tr>
+                    <td>Laksa Betawi</td>
+                    <td>Rp40.000</td>
+                </tr>
+                <tr>
+                    <td>Laksa Bogor</td>
+                    <td>Rp40.000</td>
+                </tr>
+                <tr>
+                    <td>Laksa Singapura</td>
+                    <td>Rp45.000</td>
+                </tr>
+                <tr>
+                    <td>Laksa Palembang</td>
+                    <td>Rp40.000</td>
+                </tr>
+                <tr>
+                    <td>Laksa Medan</td>
+                    <td>Rp40.000</td>
+                </tr>
+                <tr>
+                    <td>Laksa Hot Pot</td>
+                    <td>Rp55.000</td>
+                </tr>
+            </table>
+            </div>
+        </section>
+
+        <section id="Kontak">
+            <h2>Hubungi Kami</h2>
+            <p>Email: laksa.bangsa@gmail.com</p>
+            <p>Telepon: +62 7510-3300-1945</p>
+            <p>WhatsApp: +62 7510-3300-1945</p>
+        </section>
+        <footer>
+            <p>&copy; 2025 Laksa Bangsa. Semua hak dilindungi undang-undang.</p>
+        </footer>
+    </main>
+</body>
+</html>
