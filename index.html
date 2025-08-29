@@ -7,13 +7,13 @@
     <style>
         @font-face {
             font-family: "Moderniz";
-            src: url("Moderniz.otf") format("opentype");
+            src: url("Fonts/Moderniz.otf") format("opentype");
             font-weight: normal;
         }
 
         @font-face {
             font-family: "Just Sans";
-            src: url("Just Sans Regular.otf") format("opentype");
+            src: url("Fonts/Just Sans Regular.otf") format("opentype");
             font-weight: normal;
         }
 
@@ -82,7 +82,7 @@
         }
 
         footer p {
-            font-size: 12.5px;
+            font-size: 14px;
         }
 
         section {
@@ -95,6 +95,29 @@
 
         #Tentang p, #Kontak p {
             margin: 10px;
+        }
+
+        #Tentang > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        #Tentang img {
+            border-radius: 5px;
+        }
+
+        #Kontak > div {
+            font-family: "Just Sans";
+            font-size: 25px;
+            margin-bottom: 25px;
+            text-align: left;
+            display: grid;
+            grid-template-columns: 120px 20px 1fr;
+            gap: 4px 8px;
         }
 
         #table {
@@ -163,15 +186,20 @@
     <main>
         <section id="Tentang">
             <h2>Tentang Kami</h2>
-            <p>Mie kami selalu dibuat handmade.</p>
-            <p>Kuah kami dibuat oleh chef profesional.</p>
-            <p>Karyawan kami dilatih untuk memberikan servis terbaik.</p>
-            <p>Hanya untuk pelanggan kami!</p>
+            <div>
+                <img src="Noodles.jpeg" alt="Chef pulling noodles" style="width: 250px;">
+                <div>
+                <p>Mie kami selalu dibuat handmade.</p>
+                <p>Kuah kami dibuat oleh chef profesional.</p>
+                <p>Karyawan kami dilatih untuk memberikan servis terbaik.</p>
+                <p>Hanya untuk pelanggan kami!</p>
+                </div>
+            </div>
         </section>
 
         <section id="Produk">
             <h2>Produk Kami</h2>
-            <div class="produk-showcase">
+            <div class="produk-showcase" style="margin-bottom: 50px">
                 <div class="produk">
                     <img src="Laksa Betawi.png" alt="Laksa Betawi">
                     <p>Laksa Betawi</p>
@@ -183,6 +211,20 @@
                 <div class="produk">
                     <img src="Laksa Singapura.jpg" alt="Laksa Singapura">
                     <p>Laksa Singapura</p>
+                </div>
+            </div>
+            <div class="produk-showcase">
+                <div class="produk">
+                    <img src="Laksa Jepara.png" alt="Laksa Jepara">
+                    <p>Laksa Jepara</p>
+                </div>
+                <div class="produk">
+                    <img src="Laksa Medan.jpeg" alt="Laksa Medan">
+                    <p>Laksa Medan</p>
+                </div>
+                <div class="produk">
+                    <img src="Laksa Hotpot.jpeg" alt="Laksa Hotpot">
+                    <p>Laksa Hotpot</p>
                 </div>
             </div>
         </section>
@@ -208,7 +250,7 @@
                     <td>Rp45.000</td>
                 </tr>
                 <tr>
-                    <td>Laksa Palembang</td>
+                    <td>Laksa Jepara</td>
                     <td>Rp40.000</td>
                 </tr>
                 <tr>
@@ -216,7 +258,7 @@
                     <td>Rp40.000</td>
                 </tr>
                 <tr>
-                    <td>Laksa Hot Pot</td>
+                    <td>Laksa Hotpot</td>
                     <td>Rp55.000</td>
                 </tr>
             </table>
@@ -225,9 +267,11 @@
 
         <section id="Kontak">
             <h2>Hubungi Kami</h2>
-            <p>Email: laksa.bangsa@gmail.com</p>
-            <p>Telepon: +62 7510-3300-1945</p>
-            <p>WhatsApp: +62 7510-3300-1945</p>
+            <div>
+                <div>Email</div><div>:</div><div>laksa.bangsa@gmail.com</div>
+                <div>Telepon</div><div>:</div><div>+62 870-5175-1001</div>
+                <div>WhatsApp</div><div>:</div><div>+62 875-3310-7510</div>
+            </div>
         </section>
         <footer>
             <p>&copy; 2025 Laksa Bangsa. Semua hak dilindungi undang-undang.</p>
@@ -235,4 +279,3 @@
     </main>
 </body>
 </html>
-
